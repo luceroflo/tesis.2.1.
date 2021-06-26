@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/iconos.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- fon para iconos -->
+    <title>SCU</title>
+  </head>
+  <body>
+    <!-- Container de La Cuadricula -->
+    <div class="container__panel">
+      <!-- Barra Principal -->
+      <div class="main-header fixed" data-theme="">
+        <div class="brand">
+          <button class="toggle-button icon-menu" data-theme=""></button>
+          <a href="#" class="brand__link">
+            <img src="./img/logo.png" alt="Logo" class="brand__img" />
+            <h1 class="brand__title">UNESR</h1></a
+          >
+        </div>
+        <!-- Formulario de Busqueda -->
+        <nav class="menu__panel">
+          <div class="menu__panel-box">
+            <form action="#" class="menu__panel-form">
+              <input
+                type="search"
+                placeholder="Cedula"
+                class="menu__panel-form-input"
+              />
+              <button
+                type="submit"
+                class="icon-search menu__panel-button"
+              ></button>
+            </form>
+          </div>
+          <div class="menu__panel-box">
+            <button class="icon icon-mensaje"></button>
+            <button class="icon icon-pencil"></button>
+          </div>
+          <div class="menu__panel-box">
+            <div class="menu__panel-user">
+              <div class="profile">
+                <div class="profile__img">
+                  <i class="icon-user"></i>
+                </div>
+              </div>
+              <!-- USUARIO -->
+              <div class="profile__menu-container">
+                <h1 class="profile__name">
+                  Nombre de Usuario <span class="profile__rol">DISCAPACITADO</span>
+                </h1>
+                <ul class="profile__menu">
+                  <li class="profile__menu-item">
+                    <i class="profile__menu-icon icon-user"></i>
+                    <a href="#" class="profile__menu-link">Perfil</a>
+                  </li>
+                  <li class="profile__menu-item">
+                    <i class="profile__menu-icon icon-pencil"> </i>
+                    <a href="#" class="profile__menu-link">Editar</a>
+                  </li>
+                  <li class="profile__menu-item">
+                    <i class="profile__menu-icon icon-mensaje"></i>
+                    <a href="#" class="profile__menu-link">Mensajes</a>
+                  </li>
+                  <li class="profile__menu-item">
+                    <i class="profile__menu-icon icon-cog"></i>
+                    <a href="#" class="profile__menu-link">Configuraciones</a>
+                  </li>
+                  <li class="profile__menu-item">
+                    <i class="profile__menu-icon icon-ayuda"></i>
+                    <a href="#" class="profile__menu-link">Ayuda</a>
+                  </li>
+                  <li class="profile__menu-item">
+                    <i class="profile__menu-icon"></i>
+                    <a href="#" class="profile__menu-link icon-sign-out">Desconectarse</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- USUARIO FIN-->
+            </div>
+          </div>
+        </nav>
+      </div>
+      <aside class="panel fixed" data-theme="">
+        <ul class="menu">
+          <div class="menu-container-links">
+            <div class="menu-container-options">
+              <p class="menu__option">Estudiante</p>
+              <p class="menu__icon">+</p>
+            </div>
+            <div class="menu__links-box">
+              <a href="#" class="menu__link">Registro</a>
+              <a href="#" class="menu__link">Modificaciòn</a>
+            </div>
+          </div>
+          <div class="menu-container-links">
+            <div class="menu-container-options">
+              <p class="menu__option">Profesor</p>
+              <p class="menu__icon">+</p>
+            </div>
+            <div class="menu__links-box">
+              <a href="#" class="menu__link">Registro</a>
+              <a href="#" class="menu__link">Modificaciòn</a>
+            </div>
+          </div>
+
+          <div class="menu-container-links">
+            <div class="menu-container-options">
+              <p class="menu__option">Personal Administrativo</p>
+              <p class="menu__icon">+</p>
+            </div>
+            <div class="menu__links-box">
+              <a href="#" class="menu__link">Registro</a>
+              <a href="#" class="menu__link">Modificaciòn</a>
+            </div>
+          </div>
+
+            <div class="menu-container-links">
+              <div class="menu-container-options">
+                <p class="menu__option">Personal Laboral</p>
+                <p class="menu__icon">+</p>
+              </div>
+              <div class="menu__links-box">
+                <a href="#" class="menu__link">Registro</a>
+                <a href="#" class="menu__link">Modificaciòn</a>
+              </div>
+            </div>
+
+            <div class="menu-container-links">
+              <div class="menu-container-options">
+                <p class="menu__option">Invitado</p>
+                <p class="menu__icon">+</p>
+              </div>
+              <div class="menu__links-box">
+                <a href="#" class="menu__link">Registro</a>
+                <a href="#" class="menu__link">Modificaciòn</a>
+              </div>
+            </div>
+
+          <div class="menu-container-links">
+            <div class="menu-container-options">
+              <p class="menu__option">Colores Personalizables</p>
+              <p class="menu__icon">+</p>
+            </div>
+            
+            <div class="menu__links-box">
+              <div class="container-colors"></div>
+            </div>
+          </div>
+        </ul>
+      </aside>
+
+      <!-- listas  -->
+    </div>
+    <div class="modal">
+      <button class="button--close">X</button>
+      <div class="modal-content"></div>
+    </div>
+
+    <!-- Formulario -->
+
+    <main class="main__content">
+      <form action="#" autocomplete="off" class="form__principal">
+        <div class="user_info">
+          <input
+            type="text"
+            id="names"
+            placeholder="Nombres y Apellidos"
+            class="form__input"
+            required
+          />
+          <input
+            type="text"
+            id="cedula"
+            placeholder="Cedula"
+            class="form__input number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57;"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            class="form__input"
+            required
+          />
+          <input
+            type="text"
+            id="celular"
+            placeholder="Numero Celular"
+            class="form__input number"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57;"
+            required
+          />
+
+          <label class="label__title">Carrera:</label>
+          <select name="select" class="form_select" id="carrera"></select>
+
+          <div class="form-container__checkbox">
+            <!-- <label class="label__title"> ¿Labora en la Unesr? </label>
+            <input type="checkbox" name="" id="" class="form-checkbox" /> Si
+            <input type="checkbox" name="" id="" class="form-checkbox" /> No -->
+          </div>
+          Introducir imagen 
+          <input name="userfile" class="gen_input" type="file" id="file" />
+          <p class="form__description">
+            Como hacer el envio de la foto, el nombre de la imagen debe ser el
+            numero de cédula <b>(jpg)</b> El tamaño no debe exceder de
+            <strong>100KB</strong>.
+          </p>
+          <div class="preview"></div>
+          <!-- boton  -->
+          <input
+            type="submit"
+            value="Confirmar"
+            id="btnSend"
+            class="button--submit disabled"
+            data-theme=""
+          />
+        </div>
+      </form>
+    </main>
+
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
